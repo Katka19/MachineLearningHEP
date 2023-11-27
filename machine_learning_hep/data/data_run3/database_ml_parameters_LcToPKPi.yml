@@ -186,8 +186,8 @@ LcpKpi:
       seedmerge: [12] #list of periods
       period: [LHC22o] #list of periods
       select_period: [1]
-      prefix_dir: /data2/MLhep/
-      unmerged_tree_dir: [real/LHC22o_pass4_medium/unmerged] #list of periods
+      prefix_dir: /data2/user_data/gajdokat/MLhep/
+      unmerged_tree_dir: [data/LHC22o/train133916] #list of periods
       pkl: [LHC22pp/period_LHC22o/pkldata] #list of periods
       pkl_skimmed: [LHC22pp/period_LHC22o/pklskdata] #list of periods
       pkl_skimmed_merge_for_ml: [LHC22pp/period_LHC22o/pklskmldata] #list of periods
@@ -204,7 +204,7 @@ LcpKpi:
       seedmerge: [12] #list of periods
       period: [test] #list of periods
       select_period: [1]
-      prefix_dir: /data2/MLhep/
+      prefix_dir: /data2/user_data/gajdokat/MLhep/
       unmerged_tree_dir: [sim/alice/cern.ch/user/a/alihyperloop/jobs/0024] #list of periods
       pkl: [LHC22pp_mc/prod_LHC22b1b/pklmc] #list of periods
       pkl_skimmed: [LHC22pp_mc/prod_LHC22b1b/pklskmc] #list of periods
@@ -233,7 +233,7 @@ LcpKpi:
     binmax: [2,4,6,8,12,24] # must be equal to sel_skim_binmax (sel_skim_binmin bins)
     mltype: BinaryClassification
     ncorescrossval: 10
-    prefix_dir_ml: /data2/MLhep/
+    prefix_dir_ml: /data2/user_data/gajdokat/MLhep/
     mlplot: mlplot # to be removed
     mlout: mlout # to be removed
 
@@ -319,12 +319,12 @@ LcpKpi:
 
       data:
         runselection: [null, null] #FIXME
-        prefix_dir_res: /data2/MLhep/
+        prefix_dir_res: /data2/user_data/gajdokat/MLhep/
         results: [LHC22pp/Results/prod_LHC22o/resultsdata] #list of periods
         resultsallp: LHC22pp/Results/resultsdatatot
       mc:
         runselection: [null] #FIXME
-        prefix_dir_res: /data2/MLhep/
+        prefix_dir_res: /data2/user_data/gajdokat/MLhep/
         results: [LHC22pp_mc/Results/prod_LHC22b1b/resultsmc] #list of periods
         resultsallp: LHC22pp_mc/Results/prod_LHC22b1b/resultsmctot
 
